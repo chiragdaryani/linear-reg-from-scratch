@@ -207,7 +207,7 @@ plt.figure()
 plt.plot(epochs, risks_val, 'r--')
 plt.xlabel('Epoch')
 plt.ylabel('Validation Risk')
-plt.savefig('Q2.a) Validation Risk.png')
+plt.savefig('Validation Risk.png')
 
 
 
