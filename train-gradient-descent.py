@@ -10,7 +10,6 @@ def predict(X, w, y=None, normalize=True):
     # w: (d+1) x 1
     # y_new: Nsample
 
-    # TODO: Your code here
 
     # Get prediction
     y_hat = X.dot(w)
@@ -65,7 +64,6 @@ def train(X_train, y_train, X_val, y_val):
             loss_this_epoch += loss_batch
             
             
-            # TODO: Your code here
             # Mini-batch gradient descent
             
             #Update value of weights using learning rate and derivative of loss
@@ -76,7 +74,6 @@ def train(X_train, y_train, X_val, y_val):
             #update weight
             w = w - alpha*gradient
 
-        # TODO: Your code here
         # monitor model behavior after each epoch
         # 1. Compute the training loss by averaging loss_this_epoch
         avg_loss_for_epoch =  loss_this_epoch / (N_train/batch_size) #divide by no of batches
@@ -166,7 +163,6 @@ MaxIter = 100        # Maximum iteration
 decay = 0.0          # weight decay
 
 
-# TODO: Your code here
 
 # Get best validation performance parameters
 epoch_best, risk_best, w_best, losses_train, risks_val = train(X_train, y_train, X_val, y_val)
